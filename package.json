@@ -1,0 +1,28 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolai-petukhov/weather-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Nikolai Petukhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolai-petukhov/weather-cli/issues"
+  },
+  "homepage": "https://github.com/nikolai-petukhov/weather-cli#readme",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
