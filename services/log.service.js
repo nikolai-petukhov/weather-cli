@@ -10,7 +10,7 @@ function printSuccess(message) {
 
 function printHelp() {
     console.log(
-        `${chalk.bgCyan('HELP')}
+`${chalk.bgCyan('HELP')}
 without params - output weather
 -s [CITY] for set location
 -h for output help
@@ -19,4 +19,15 @@ without params - output weather
     );
 }
 
-export { printError, printSuccess, printHelp }
+function printWeather(res, icon) {
+    console.log(
+`${chalk.bgYellow('WEATHER')} in the ${res.name}
+${icon}  ${res.weather[0].description}
+Temperature: ${res.main.temp} (feels like ${res.main.feels_like})
+Humidity: ${res.main.humidity}%
+Wind speed: ${res.wind.speed}
+        `
+    );
+}
+
+export { printError, printSuccess, printHelp, printWeather }
